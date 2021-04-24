@@ -1,10 +1,10 @@
 ﻿namespace BusinessLogic.Repository
 {
+    using System.Linq;
     using BusinessLogic.Entities;
     using Microsoft.EntityFrameworkCore;
-    using System.Linq;
 
-    public class EmployeeRepository
+    public class EmployeeRepository : IEmployeeRepository
     {
         private readonly SberTestDbContext sberTestDbContext;
 

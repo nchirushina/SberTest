@@ -9,9 +9,9 @@
     {
         public static IServiceCollection AddBusinessLogic(this IServiceCollection services, string connectionString)
         {
-            services.AddTransient<FoodCostByDayRepository, FoodCostByDayRepository>();
-            services.AddTransient<EmployeeRepository, EmployeeRepository>();
-            services.AddTransient<WorkDayRepository, WorkDayRepository>();
+            services.AddTransient<IFoodCostByDayRepository, FoodCostByDayRepository>();
+            services.AddTransient<IEmployeeRepository, EmployeeRepository>();
+            services.AddTransient<IWorkDayRepository, WorkDayRepository>();
             services.AddTransient<IFoodCostCalcService, FoodCostCalcService>();
             services.AddDbContext<SberTestDbContext>(option => option.UseSqlServer(connectionString));
 

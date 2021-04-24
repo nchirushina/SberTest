@@ -3,18 +3,18 @@
     using System.Linq;
     using BusinessLogic.Entities;
 
-    public class FoodCostByDayRepository
+    public class WorkDayRepository : IWorkDayRepository
     {
         private readonly SberTestDbContext sberTestDbContext;
 
-        public FoodCostByDayRepository(SberTestDbContext sberTestDbContext)
+        public WorkDayRepository(SberTestDbContext sberTestDbContext)
         {
             this.sberTestDbContext = sberTestDbContext;
         }
 
-        public IQueryable<FoodCostByDay> GetAll()
+        public IQueryable<WorkDay> GetAll()
         {
-            return this.sberTestDbContext.FoodCosts;
+            return this.sberTestDbContext.WorkDays;
         }
     }
 }
