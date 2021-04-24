@@ -2,5 +2,14 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs/SberTest/v16/.suo
-/.vs/slnx.sqlite
+*.Cache
+*.StyleCop
+/BusinessLogic/.vs/BusinessLogic/v16
+/BusinessLogic/.vs/BusinessLogic/config
+/BusinessLogic/BusinessLogic/obj
+/BusinessLogic/DemoSberTestDb/bin/Debug/netcoreapp3.1
+/BusinessLogic/DemoSberTestDb/obj
+/BusinessLogic/SberTestApi/bin/Debug/netcoreapp3.1
+/BusinessLogic/SberTestApi/obj
+/.vs
+/BusinessLogic/BusinessLogic/bin/Debug/netcoreapp3.1
