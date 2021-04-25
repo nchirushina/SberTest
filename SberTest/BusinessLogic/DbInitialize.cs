@@ -51,17 +51,12 @@
                     sberTestDb.WorkDays.Add(new WorkDay() { DateOfWorkDay = new DateTime(2020, 04, 28), WorkDayStatus = EWorkDayStatus.WorkingDay });
                     sberTestDb.WorkDays.Add(new WorkDay() { DateOfWorkDay = new DateTime(2020, 04, 29), WorkDayStatus = EWorkDayStatus.WorkingDay });
                     sberTestDb.WorkDays.Add(new WorkDay() { DateOfWorkDay = new DateTime(2020, 04, 30), WorkDayStatus = EWorkDayStatus.WorkingDay });
-                    sberTestDb.WorkDays.Add(new WorkDay() { DateOfWorkDay = new DateTime(2020, 05, 1), WorkDayStatus = EWorkDayStatus.Weekend });
-                    sberTestDb.WorkDays.Add(new WorkDay() { DateOfWorkDay = new DateTime(2020, 05, 2), WorkDayStatus = EWorkDayStatus.Weekend });
-                    sberTestDb.WorkDays.Add(new WorkDay() { DateOfWorkDay = new DateTime(2020, 05, 3), WorkDayStatus = EWorkDayStatus.Weekend });
-                    sberTestDb.WorkDays.Add(new WorkDay() { DateOfWorkDay = new DateTime(2020, 05, 4), WorkDayStatus = EWorkDayStatus.WorkingDay });
-                    sberTestDb.WorkDays.Add(new WorkDay() { DateOfWorkDay = new DateTime(2020, 05, 5), WorkDayStatus = EWorkDayStatus.WorkingDay });
 
                     sberTestDb.SaveChanges();
 
                     //AccountansyFoodRate
-                    sberTestDb.FoodCosts.Add(new FoodCostByDay() { Count = 200, StartAppointmentDateTime = new DateTime(2015, 01, 01), FinishAppointmentDateTime = new DateTime(2020, 04, 20) });
-                    sberTestDb.FoodCosts.Add(new FoodCostByDay() { Count = 300, StartAppointmentDateTime = new DateTime(2020, 04, 21), FinishAppointmentDateTime = new DateTime(2025, 04, 20) });
+                    sberTestDb.FoodCosts.Add(new FoodCostByDay() { Count = 200, StartAppointmentDateTime = new DateTime(2015, 01, 01), FinishAppointmentDateTime = new DateTime(2020, 04, 19) });
+                    sberTestDb.FoodCosts.Add(new FoodCostByDay() { Count = 300, StartAppointmentDateTime = new DateTime(2020, 04, 20), FinishAppointmentDateTime = new DateTime(2025, 04, 20) });
 
                     sberTestDb.SaveChanges();
 
@@ -94,11 +89,6 @@
                     sberTestDb.Timesheets.Add(new EmployeersWorkDays() { EmployeeId = 1, WorkDayId = 26 });
                     sberTestDb.Timesheets.Add(new EmployeersWorkDays() { EmployeeId = 1, WorkDayId = 27 });
                     sberTestDb.Timesheets.Add(new EmployeersWorkDays() { EmployeeId = 1, WorkDayId = 28 });
-                    sberTestDb.Timesheets.Add(new EmployeersWorkDays() { EmployeeId = 1, WorkDayId = 29 });
-                    sberTestDb.Timesheets.Add(new EmployeersWorkDays() { EmployeeId = 1, WorkDayId = 30 });
-                    sberTestDb.Timesheets.Add(new EmployeersWorkDays() { EmployeeId = 1, WorkDayId = 31 });
-                    sberTestDb.Timesheets.Add(new EmployeersWorkDays() { EmployeeId = 1, WorkDayId = 32 });
-                    sberTestDb.Timesheets.Add(new EmployeersWorkDays() { EmployeeId = 1, WorkDayId = 33 });
 
                     sberTestDb.SaveChanges();
                 }
