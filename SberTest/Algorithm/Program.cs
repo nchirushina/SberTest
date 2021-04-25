@@ -1,7 +1,7 @@
 ﻿namespace Algorithm
 {
     using System;
-    using System.Collections.Generic;
+    using System.Linq;
 
     class Program
     {
@@ -15,23 +15,11 @@
             decimal foodCostSecond = 300;
             int threshold = 20;
 
-            var noWorkedDay = new List<int>();
-
-            foreach (int day in weekend)
-            {
-                noWorkedDay.Add(day);
-            }
-
-            foreach (int day in sickDay)
-            {
-                noWorkedDay.Add(day);
-            }
-
             decimal totalCost = 0;
 
             for (int i = firstWorkDay; i <= lastWorkDay; i++)
             {
-                if (!noWorkedDay.Contains(i))
+                if (!weekend.Contains(i) && !sickDay.Contains(i))
                 {
                     if (i < threshold)
                     {
@@ -45,7 +33,6 @@
             }
 
             Console.WriteLine($"Работнику Иванову полагается на питание {totalCost} руб.");
-            Console.ReadLine();
         }
     }
 }
